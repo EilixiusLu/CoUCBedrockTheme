@@ -1,0 +1,33 @@
+/* ---- 特殊中文字体定义 ---- */
+
+/* @font-face {
+    font-family: "Huiwen-MinchoGBK";
+    src: url("./huiwen-mincho.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "chengrongguangke";
+    src: url("./chengrongguang-ke.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: "Huiwen-MinchoGBK";
+    src: url("./huiwen-mincho.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "chengrongguangke";
+    src: url("./chengrongguang-ke.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

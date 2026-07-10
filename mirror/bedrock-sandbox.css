@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdmirror.com/gh/EilixiusLu/CoUCBedrockTheme@v1.0.0/bedrock-couc.css");
+
+:root:lang(cn) {
+    --header-title: '有点尊荣，不太光赫的';
+    --header-subtitle: '异常沙盒委员会';
+}

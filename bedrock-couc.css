@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.0/lib/normalize-min.css");
+@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.0/lib/basalt-bedrock-min.css");
+
+/* -- 内部字体 -- */
+@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.0/fonts/fonts.css");
+
+/* -- 外部字体 -- */
+/* Noto Serif SC */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
+/* 异常货物 版式字体 */
+@import url('https://fonts.googleapis.com/css?family=Caladea|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|Tangerine');
+
+/* -- 本地测试使用 -- */
+/* @import url("./lib/normalize-min.css");
+@import url("./lib/basalt-bedrock-min.css");
+@import url("./fonts/fonts.css"); */
+
+/*
+    Bedrock Theme
+    [2021 Wikidot Theme]
+    Version 2.1.0
+    Created by Liryn, Placeholder McD
+    with thanks to EstrellaYoshte
+
+    Bedrock(Unusual Cargo) Theme
+    [2026 Wikidot Theme]
+    Created by Chhokmah Lu
+    Based on Bedrock Theme
+
+    MIT License
+*/
+
+:root {
+    /* --- 基础背景色 --- */
+    --basalt-primary-color: 246,241,233;
+    --basalt-secondary-color: 236,228,214;
+    --basalt-tertiary-color: 201,185,159;
+
+    /* --- 文本色 --- */
+    --basalt-main-text-color: 44,38,33;
+    --basalt-sub-text-color: 115,107,94;
+    --basalt-light-text-color: var(--basalt-primary-color);
+
+    /* --- 主题色与点缀色 --- */
+    --basalt-overtone: 94,50,45;
+    --basalt-undertone: 120,40,35;
+    --basalt-bright-element-color: 148,33,33;
+    --basalt-dark-element-color: 92,20,20;
+    --basalt-alternate-color: 168,115,50;
+
+    /* --- 状态颜色 --- */
+    --basalt-positive-color: 63,108,81;
+    --basalt-negative-color: 186,22,22;
+    --basalt-cancel-color: var(--basalt-negative-color);
+
+    --basalt-UI-dark-palette: var(--basalt-overtone);
+    --basalt-focus-color: var(--basalt-undertone);
+    --basalt-background-color: var(--basalt-primary-color);
+
+  /* --- 引用自玄武岩的元素 --- */
+    --floatbox-background-color: var(--basalt-secondary-color);
+    --document-background-color: var(--basalt-primary-color);
+    --darkdocument-background-color: var(--basalt-secondary-color);
+
+    --header-logo: url("./img/COUC_logo.png");
+    --header-title: 'The R. H. Commission on';
+    --header-subtitle: 'Unusual Cargo';
+    --title-size: 0.9rem;
+    --subtitle-size: 1.5rem;
+
+    --base-font-size: 1rem;
+    --main-content-width: 67.5rem;
+    --side-bar-width: 19rem;
+
+    --header-font-primary: "Huiwen-MinchoGBK","Noto Serif SC";
+    --UI-font-primary: 'Jost';
+    --body-font-primary: 'Inter';
+    --mono-font-primary: 'JetBrains Mono';
+}
+
+:root:lang(cn) {
+    --header-title: '尊荣光赫的';
+    --header-subtitle: '异常货物委员会';
+
+    --body-font-fallback: "Noto Serif SC", Verdana, "Microsoft YaHei", "微软雅黑", Geneva, sans-serif, STXihei, "华文细黑";
+    --UI-font-fallback: "Noto Serif SC", "方体", "PingFang SC", "黑体", "Heiti SC", "Microsoft JhengHei UI", "Microsoft JhengHei", Roboto, Noto, "Noto Sans CJK SC", sans-serif;
+    --header-font-fallback: "Huiwen-MinchoGBK","Noto Serif SC";
+    --mono-font-fallback: "Noto Sans SC", "Microsoft YaHei", "微软雅黑", "Courier New", Courier, monospace, STXihei, "华文细黑";
+
+}
+
+#header h1 a span::before {
+    font-weight: 600;
+}
+
+#header h1 a span::after {
+    font-family:'chengrongguangke';
+    font-weight: 900;
+}
+
+:is(#side-bar,#interwiki) .heading {
+    font-size: 0.95rem;
+}
+
+#page-title, .meta-title {
+    text-align: center;
+    padding: .5em 0 .125em 0;
+}
+
+/* 引入异常货物版式的元素 */
+div.paper {
+    background: linear-gradient(rgba(220, 240, 240, 0.3), rgba(240, 240, 220, 0.5)), url("./img/CoUC-Paper.jpg");
+    box-shadow: 4px 6px 8px #a98;
+    padding: 1.5em 1em 1.5em 1em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+
+}
+
+.paper h1, .paper h2, .paper h3, .paper h4, .paper h5, .paper h6 {
+    font-family: "Huiwen-MinchoGBK","Noto Serif SC";
+    font-weight: normal;
+}
+
+@media (max-width: 478px) {
+    div.paper {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: .5em 0em .5em 0em;
+    }
+}
+
+/* 引入玄武岩的元素 */
+:is(div.blockquote, blockquote):has(div.floatbox) {
+    overflow: unset;
+}
+
+#page-content div.floatbox {
+    background-color: rgb(var(--floatbox-background-color));
+    float: left;
+    max-width: calc(var(--main-content-width)/2.25);
+    box-sizing: border-box;
+    margin: 0.25rem 1.25rem;
+    margin-left: clamp(calc(var(--main-content-width)/-4.5), calc((87.5vw - 95%)/-2), 0rem);
+    padding-inline: 1.2rem;
+    padding-block: 0.5rem;
+    font-size: 0.9125em;
+    border-radius: 7px;
+    border: solid 0.12rem rgba(var(--general-border-color), 0.4);
+}
+
+#page-content div.floatbox.right {
+    float: right;
+    margin-left: 1.25rem;
+    margin-right: clamp(calc(var(--main-content-width)/-4.5), calc((87.5vw - 95%)/-2), 0rem);
+}
+
+@media only screen and (max-width: 640px) {
+    #page-content div:is(.floatbox, .floatbox.right) {
+     float: none;
+     margin: 0.5rem auto;
+     width: 100%;
+    }
+}
+
+#page-content div:is(.document, .darkdocument) {
+    max-width: 45rem;
+}
+
+div:is(.document, .darkdocument) {
+    display: block;
+    margin-inline: auto;
+    margin-block: 1.5em;
+    padding: 1.5rem;
+    position: relative;
+    --posX: -20vw;
+}
+
+div.document {
+    background-color: rgb(var(--document-background-color));
+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 0, 0.15), 0px 6px 15px -4px rgba(0, 0, 0, 0.3);
+    color: rgb(50, 50, 53);
+}
+
+div.darkdocument {
+    background-color: rgb(var(--darkdocument-background-color));
+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 10, 0.4), 0px 6px 15px -4px rgba(0, 0, 7, 0.45);
+    color: rgb(50, 50, 53);
+}
+
+div:is(.document, .darkdocument)::before,
+div:is(.document, .darkdocument)::after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 98%;
+    z-index: -1;
+}
+
+div:is(.document, .darkdocument)::before {
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+}
+
+div:is(.document, .darkdocument)::after {
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+}
+
+div:is(.document)::before,
+div:is(.document)::after {
+    background-color: rgb(var(--document-background-color));
+}
+
+div:is(.darkdocument)::before,
+div:is(.darkdocument)::after {
+    background-color: rgb(var(--darkdocument-background-color));
+    opacity: 90%;
+}
+
+div.document::before {
+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 0, 0.1), 0px 6px 15px -4px rgba(0, 0, 0, 0.1);
+}
+
+div.document::after {
+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 0, 0.1), 0px 6px 15px -4px rgba(0, 0, 0, 0.05);
+}
+
+div.darkdocument::before {
+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 10, 0.4), 0px 6px 15px -4px rgba(0, 0, 7, 0.45);
+}
+
+div.darkdocument::after {
+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 10, 0.4), 0px 6px 15px -4px rgba(0, 0, 7, 0.05);
+}
+
+@media only screen and (max-width: 1020px) {
+
+    div:is(.document, .darkdocument)::before,
+    div:is(.document, .darkdocument)::after {
+     display: none;
+    }
+}
+
+#toc {
+    position: fixed;
+    top: 20vh;
+    right: 0;
+    z-index: 50;
+    width: 260px;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    overflow: visible;
+    background-color: rgba(var(--basalt-secondary-color), 0.98);
+    border: 1px solid rgb(var(--basalt-tertiary-color));
+    border-right: none;
+    border-top: 4px solid rgb(var(--basalt-bright-element-color));
+    border-radius: 4px 0 0 4px;
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px 15px 20px;
+}
+
+#toc::before {
+    content: "展开目录";
+    text-align:center;
+    position: absolute;
+    top: 2.5rem;
+    left: -2rem;
+    width: 2rem;
+    padding: 1.2rem 0;
+    background-color: rgb(var(--basalt-overtone));
+    color: rgb(var(--basalt-primary-color));
+    border: 1px solid rgb(var(--basalt-tertiary-color));
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    box-shadow: -3px 2px 8px rgba(0, 0, 0, 0.15);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#toc:hover {
+    transform: translateX(0);
+}
+
+#toc:hover::before {
+    content: "关闭目录";
+    background-color: rgb(var(--basalt-bright-element-color));
+}
+
+#toc-action-bar {
+    display: none !important;
+}
+
+#toc .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(var(--basalt-overtone));
+    margin: 0 0 12px 0;
+    padding-bottom: 5px;
+}
+
+#toc-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+#toc-list div { margin: 6px 0; line-height: 1.4; }
+#toc-list a { color: rgb(var(--basalt-main-text-color)); text-decoration: none; transition: all 0.2s; }
+#toc-list a:hover { color: rgb(var(--basalt-bright-element-color)); padding-left: 4px; }
+
+#toc-list::-webkit-scrollbar { width: 6px; }
+#toc-list::-webkit-scrollbar-track { background: transparent; }
+#toc-list::-webkit-scrollbar-thumb { background: rgb(var(--basalt-tertiary-color)); border-radius: 3px; }
+#toc-list::-webkit-scrollbar-thumb:hover { background: rgb(var(--basalt-alternate-color)); }

@@ -1,0 +1,17 @@
+# macOS系统文件
+.DS_Store
+
+# 编辑器配置
+.vscode/
+.idea/
+
+# 构建产物
+dist/
+
+# Dependencies
+node_modules/
+
+# Miscellaneous
+.*.sw?
+*~
+*#
