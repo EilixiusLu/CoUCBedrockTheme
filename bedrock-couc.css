@@ -4,11 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900");
 @import url("https://fonts.googleapis.com/css?family=Caladea|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|Tangerine");
 
-@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.4/lib/normalize-min.css");
-@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.4/lib/basalt-bedrock-min.css");
+@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.5/lib/normalize-min.css");
+@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.5/lib/basalt-bedrock-min.css");
 
 /* -- 内部字体 -- */
-@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.4/fonts/fonts.css");
+@import url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.5/fonts/fonts.css");
 
 /* -- 本地测试使用 -- */
 /* @import url("./lib/normalize-min.css");
@@ -62,7 +62,7 @@
     --document-background-color: var(--basalt-primary-color);
     --darkdocument-background-color: var(--basalt-secondary-color);
 
-    --header-logo: url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.4/img/COUC-Logo.png");
+    --header-logo: url("https://cdn.jsdelivr.net/gh/EilixiusLu/CoUCBedrockTheme@v1.0.5/img/COUC-Logo.png");
     --header-title: 'The R. H. Commission on';
     --header-subtitle: 'Unusual Cargo';
     --title-size: 0.9rem;
