@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 /* -- 外部字体 -- */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900");
-@import url("https://fonts.googleapis.com/css?family=Caladea|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|Tangerine");
+@import url("https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@200..900");
+@import url("https://fonts.loli.net/css?family=Caladea%7CIM+Fell+DW+Pica%7CIM+Fell+DW+Pica+SC%7CTangerine");
 
-@import url("https://cdn.jsdmirror.com/gh/EilixiusLu/CoUCBedrockTheme@v1.0.2/lib/normalize-min.css");
-@import url("https://cdn.jsdmirror.com/gh/EilixiusLu/CoUCBedrockTheme@v1.0.2/lib/basalt-bedrock-min.css");
+@import url("https://cdn.jsdmirror.com/gh/EilixiusLu/CoUCBedrockTheme@v1.0.3/lib/normalize-min.css");
+@import url("https://cdn.jsdmirror.com/gh/EilixiusLu/CoUCBedrockTheme@v1.0.3/lib/basalt-bedrock-min.css");
 
 /* -- 内部字体 -- */
-@import url("https://cdn.jsdmirror.com/gh/EilixiusLu/CoUCBedrockTheme@v1.0.2/fonts/fonts.css");
+@import url("https://cdn.jsdmirror.com/gh/EilixiusLu/CoUCBedrockTheme@v1.0.3/fonts/fonts.css");
 
 /* -- 本地测试使用 -- */
 /* @import url("./lib/normalize-min.css");
@@ -62,7 +62,7 @@
     --document-background-color: var(--basalt-primary-color);
     --darkdocument-background-color: var(--basalt-secondary-color);
 
-    --header-logo: url("./img/COUC-Logo.png");
+    --header-logo: url("https://cdn.jsdmirror.com/gh/EilixiusLu/CoUCBedrockTheme@v1.0.3/img/COUC-Logo.png");
     --header-title: 'The R. H. Commission on';
     --header-subtitle: 'Unusual Cargo';
     --title-size: 0.9rem;
@@ -109,7 +109,7 @@
 
 /* 引入异常货物版式的元素 */
 div.paper {
-    background: linear-gradient(rgba(220, 240, 240, 0.3), rgba(240, 240, 220, 0.5)), url("./img/CoUC-Paper.jpg");
+    background: linear-gradient(rgba(220, 240, 240, 0.3), rgba(240, 240, 220, 0.5)), url("../img/CoUC-Paper.jpg");
     box-shadow: 4px 6px 8px #a98;
     padding: 1.5em 1em 1.5em 1em;
     display: block;
