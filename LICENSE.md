@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) 2021 Basalt Team
+
 Copyright (c) 2026 异常货物委员会中文分部站务组
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
