@@ -6,7 +6,7 @@
 
 **基岩（异常货物）**版式基于基岩版式（Bedrock）与异常货物版式，由Chhokmah Lu制作。
 
-使用[jsDelivr](https://www.jsdelivr.com/package/gh/parawatch-wiki-cn/AnonTheme)拉取仓库并通过[JSDMirror](https://cdn.jsdmirror.com/)镜像直接在Wikidot中使用。
+使用[jsDelivr](https://www.jsdelivr.com/package/gh/EilixiusLu/CoUCBedrockTheme)拉取仓库并通过[JSDMirror](https://cdn.jsdmirror.com/)镜像直接在Wikidot中使用。
 
 pages文件夹下的local.html是一个模仿Wikidot结果的原生HTML网页，可以再本地开发测试时查看版式的大概效果。
 
